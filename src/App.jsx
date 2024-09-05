@@ -10,6 +10,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    <h1>Pragya Maharjan</h1>
     </>
   )
 }
