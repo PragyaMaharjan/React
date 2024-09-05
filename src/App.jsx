@@ -1,16 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
+import Home from './pages/Home'
 
 function App() {
   const [count, setCount] = useState(0)
 
+  function handleIncrement(){
+    setCount(count + 1)
+  }
+  function handleDecrement(){
+    setCount(count - 1)
+  }
   return (
     <>
     <Navbar/>
-    <h1>Pragya Maharjan</h1>
+    {/* <button onClick={handleIncrement}>+</button>
+    <p>{count}</p>
+    <button onClick={handleDecrement}>-</button> */}
+    <Home />
     </>
   )
 }
